@@ -1,12 +1,13 @@
-package caculator;
+package Test_Drive_Development;
 
-public class Caculator {
+public class simpleCaculator {
 
     public static final char ADDITION = '+';
     public static final char SUBTRACTION = '-';
     public static final char MULTIPLICATION = '*';
     public static final char DIVISION = '/';
-    public static int caculate(int firstOperator, int SecondOperator, char Operator) {
+
+    public static int caculator(int firstOperator, int SecondOperator, char Operator) {
         switch (Operator) {
             case ADDITION:
                 return firstOperator + SecondOperator;
@@ -18,10 +19,10 @@ public class Caculator {
                 if (SecondOperator != 0) {
                     return firstOperator / SecondOperator;
                 } else {
-                    throw new ArithmeticException("Division by sero");
+                    throw new UnsupportedOperationException("Cannot divide by zero");
                 }
             default:
-                throw new ArithmeticException("Unssuprot Operation");
+                throw new UnsupportedOperationException("Support Operator");
         }
     }
 }
