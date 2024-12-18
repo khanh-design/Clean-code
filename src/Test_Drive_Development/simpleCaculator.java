@@ -25,4 +25,5 @@ public class simpleCaculator {
                 throw new UnsupportedOperationException("Support Operator");
         }
     }
+
 }
